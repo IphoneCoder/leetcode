@@ -56,6 +56,7 @@ class Solution {
         if head == nil || head?.next == nil {
             return head
         }
+
         let temp = reverseList(head?.next)
         head?.next?.next = head
         head?.next = nil
